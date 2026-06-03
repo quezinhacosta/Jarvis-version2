@@ -1,0 +1,163 @@
+# 🤖 Jarvis 2.0 — Assistente Inteligente de Estudos
+
+O **Jarvis 2.0** é uma evolução de um sistema de auxílio ao aprendizado, desenvolvido como um **MVP fullstack com Inteligência Artificial**, com foco em geração de exercícios, personalização de estudos e acompanhamento de desempenho.
+
+Este projeto foi construído como parte de um **desafio técnico de seleção para estágio FullStack**, integrando **front-end web, back-end em Python (FastAPI) e IA aplicada**.
+
+---
+
+## Visão Geral
+
+O Jarvis 2.0 tem como objetivo principal ajudar estudantes a aprender de forma mais eficiente por meio de:
+
+- geração inteligente de exercícios;
+- personalização do estudo por perfil do usuário;
+- análise de desempenho;
+- uso de IA para apoiar o aprendizado.
+
+---
+
+## Problema Resolvido
+
+Muitos estudantes têm dificuldade em:
+
+- encontrar exercícios adequados ao seu nível;
+- organizar o que precisam estudar;
+- identificar pontos fracos;
+- manter consistência nos estudos.
+
+O Jarvis resolve isso centralizando o processo de estudo em uma plataforma inteligente e adaptativa.
+
+---
+
+## Objetivo da Aplicação
+
+Criar um **assistente de estudos inteligente**, capaz de:
+
+- gerar exercícios personalizados com IA;
+- acompanhar evolução do usuário;
+- sugerir melhorias de estudo;
+- estruturar o aprendizado de forma contínua e guiada.
+
+---
+
+##  Funcionalidades do Jarvis 0.2
+
+### Autenticação
+- Login de usuários
+- Cadastro
+- Recuperação de senha
+
+###  Perfil do usuário
+- Informações básicas do estudante
+- Reestruturação completa do perfil
+- Preferências de estudo
+- Histórico completo
+
+###  Sistema de exercícios
+- Geração de exercícios por assunto
+- Definição de dificuldade
+- Correção e feedback
+
+### Inteligência Artificial
+- Geração de questões com LLM
+- Feedback automático das respostas
+- Apoio na aprendizagem do usuário
+
+---
+
+## Melhorias da versão 2.0
+
+Esta versão representa uma evolução do sistema original com:
+
+- nova identidade visual;
+- sistema completo de autenticação;
+- recuperação de senha;
+- reestruturação do perfil do usuário;
+- integração mais robusta com IA;
+- arquitetura mais organizada e escalável.
+
+---
+
+# Jarvis 2.0 — Assistente Inteligente de Estudos
+
+O **Jarvis 2.0** é uma evolução de um sistema de auxílio ao aprendizado, desenvolvido como um **MVP fullstack com Inteligência Artificial**, com foco em geração de exercícios, personalização de estudos e acompanhamento de desempenho.
+
+Este projeto foi construído como parte de um **desafio técnico de seleção para estágio FullStack**, integrando **front-end web, back-end em Python (FastAPI) e IA aplicada**.
+
+---
+
+##  Visão Geral
+
+O Jarvis 2.0 tem como objetivo principal ajudar estudantes a aprender de forma mais eficiente por meio de:
+
+- geração inteligente de exercícios;
+- personalização do estudo por perfil do usuário;
+- análise de desempenho;
+- uso de IA para apoiar o aprendizado.
+
+---
+
+## Problema Resolvido
+
+Muitos estudantes têm dificuldade em:
+
+- encontrar exercícios adequados ao seu nível;
+- organizar o que precisam estudar;
+- identificar pontos fracos;
+- manter consistência nos estudos.
+
+O Jarvis resolve isso centralizando o processo de estudo em uma plataforma inteligente e adaptativa.
+
+---
+
+## Objetivo da Aplicação
+
+Criar um **assistente de estudos inteligente**, capaz de:
+
+- gerar exercícios personalizados com IA;
+- acompanhar evolução do usuário;
+- sugerir melhorias de estudo;
+- estruturar o aprendizado de forma contínua e guiada.
+
+---
+
+## Funcionalidades do MVP
+
+### Autenticação
+- Login de usuários
+- Cadastro
+- Recuperação de senha
+
+###  Perfil do usuário
+- Informações básicas do estudante
+- Reestruturação completa do perfil
+- Preferências de estudo
+
+###  Sistema de exercícios
+- Geração de exercícios por assunto
+- Definição de dificuldade
+- Correção e feedback
+
+### Inteligência Artificial
+- Geração de questões com LLM
+- Feedback automático das respostas
+- Apoio na aprendizagem do usuário
+
+---
+
+##  Melhorias da versão 2.0
+
+Esta versão representa uma evolução do sistema original com:
+
+- nova identidade visual;
+- sistema completo de autenticação;
+- recuperação de senha;
+- reestruturação do perfil do usuário;
+- arquitetura mais organizada e escalável.
+
+---
+
+##  Arquitetura da Solução
+
+O projeto segue uma arquitetura fullstack separada:

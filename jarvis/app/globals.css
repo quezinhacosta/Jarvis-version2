@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* fallback fonts */
+@font-face {
+  font-family: "Midnight Indigo";
+  src: local("Inter");
+}
+
+@font-face {
+  font-family: "Vanilla Cream";
+  src: local("Inter");
+}
+
+/* 🌑 verde mais escuro e sofisticado */
+:root {
+  --bg: #1f2f2a;          /* verde mais escuro */
+  --bg-2: #16231f;        /* fundo profundo */
+  --accent: #e3dec6;      /* bege */
+  --glass: rgba(227, 222, 198, 0.06);
+  --glass-border: rgba(227, 222, 198, 0.15);
+  --glow: rgba(227, 222, 198, 0.08);
+}
+
+body {
+  background: var(--bg);
+  overflow-x: hidden;
+  color: var(--accent);
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+
+  background: radial-gradient(circle at top, var(--bg) 0%, var(--bg-2) 100%);
+}
+
+/* 🌫️ camadas de luz suave */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(227, 222, 198, 0.06), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(227, 222, 198, 0.04), transparent 40%);
+  filter: blur(40px);
+  animation: slowFloat 14s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(227, 222, 198, 0.03), transparent 60%);
+  pointer-events: none;
+}
+
+@keyframes slowFloat {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.1) translate(2%, 3%); }
+}
+
+/* CONTEÚDO */
+.content {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+/* TÍTULO */
+.title {
+  font-size: clamp(3.5rem, 9vw, 6.5rem);
+  font-weight: 800;
+  font-family: "Midnight Indigo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+
+  color: var(--accent);
+  text-shadow:
+    0 0 25px var(--glow),
+    0 10px 30px rgba(0, 0, 0, 0.35);
+
+  transition: transform 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.02);
+}
+
+/* DESCRIÇÃO */
+.description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(227, 222, 198, 0.85);
+  max-width: 650px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.6;
+  font-family: "Vanilla Cream", sans-serif;
+}
+
+/* GRID */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+/* CARD GLASS */
+.featureCard {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  text-align: left;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* brilho interno sutil */
+.featureCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(227, 222, 198, 0.08), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(227, 222, 198, 0.3);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35),
+    0 0 40px rgba(227, 222, 198, 0.05);
+}
+
+.featureCard:hover::before {
+  opacity: 1;
+}
+
+/* TÍTULO DO CARD */
+.featureTitle {
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Midnight Indigo", sans-serif;
+}
+
+/* TEXTO */
+.featureText {
+  color: rgba(227, 222, 198, 0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* BOTÃO */
+.button {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 1.1rem 3.2rem;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(227, 222, 198, 0.08);
+}
+
+.button:hover {
+  transform: scale(1.06);
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  box-shadow:
+    0 0 35px rgba(227, 222, 198, 0.12);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: auto;
+  padding-top: 3rem;
+  color: rgba(227, 222, 198, 0.6);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .title {
+    letter-spacing: -1px;
+  }
+}
