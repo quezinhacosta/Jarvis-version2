@@ -22,8 +22,6 @@
 body {
   background: radial-gradient(circle at top, var(--bg-1), var(--bg-2));
 }
-
-/* CONTAINER */
 .loginContainer {
   height: 100vh;
   display: flex;
